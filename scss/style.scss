@@ -1,0 +1,220 @@
+
+/*-------------------------------------------
+共通
+-------------------------------------------*/
+body {
+    line-height: 1.7;
+    font-size: 0.9rem;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+li {
+    list-style-type: none;
+}
+
+  
+$mobile-size: 420px;
+$tablet-middle-size: 720px;
+$tablet-large-size: 960px;
+
+@mixin mobile {
+    @media (max-width: $mobile-size) {
+        @content;
+    }
+}
+
+@mixin tablet-middle {
+    @media (max-width: $tablet-middle-size) {
+        @content;
+    }
+}
+
+@mixin tablet-large {
+    @media (max-width: $tablet-large-size) {
+        @content;
+    }
+}
+  
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+header {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: space-between; // navを中央に位置付けする
+    padding: 0 40px;
+    z-index: 10; // 重なり順
+    // position: fixed;
+    background-color: silver;
+
+    @include mobile {
+        padding: 0 16px;
+    }
+}
+.title-left {
+    padding-top: 1em;
+    font-size: 18px;
+}
+
+/* humbergar menu */
+// 🍔メニュー
+#nav {
+    background-color: #121212;
+    position: fixed; // 画面のきまった位置に固定する
+    width: 30%;
+    top: 0;
+    left: -1000px;
+    bottom: 0;
+    padding: 60px 25px;
+    z-index: 20;
+    a {
+        color: #fff;
+    }
+    ul {
+        padding: 0;
+    }
+}
+
+.nav-menu {
+margin-bottom: 60px;
+border-top: solid 1px #fff;
+
+li {
+    position: relative;
+    margin: 0;
+    padding: 20px 0;
+    border-bottom: solid 1px #fff;
+}
+}
+.nav-sns li {
+    padding: 5px 0;
+}
+
+.hamburger-btn {
+    top: 16px;
+    width: 30px;
+    height: 30px;
+    right: 45px;
+    position: fixed;
+    cursor: pointer;
+    transition: all 0.5s;
+    z-index: 20; // ボタンが一番上にくるようにする
+    // display: block;
+
+    @include mobile {
+        right: 20px;
+    }
+    span {
+        display: block;
+        position: absolute;
+        background-color: #333;
+        border-radius: 4px;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        transition: all 0.5s;
+    }
+    span:nth-child(1) {
+        top: 4px;
+    }
+    span:nth-child(2) {
+        top: 14px;
+    }
+    span:nth-child(3) {
+        bottom: 4px;
+    }
+}
+
+// 🍔メニュークリック時 三本線をバツにする。
+.open {
+    #nav {
+            left: 0;
+            opacity: 1;
+            transition: all 0.5s;
+    }
+    .btn-line {
+        background-color: #fff;
+    }
+    span:nth-child(1) {
+        transform: translateY(10px) rotate(-315deg); // rotate でななめに設定
+    }
+    span:nth-child(2) {
+        opacity: 0;
+    }
+    span:nth-child(3) {
+        transform: translateY(-10px) rotate(315deg); // rotate でななめに設定
+    }
+}
+
+
+// 🍔メニューを押下後、閉じることのできるクリックエリアを指定
+#hamburger-btn-area {
+    display: none;
+    transition: all 0.5s;
+}
+
+.open #hamburger-btn-area {
+    background-color: #000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    opacity: 0.8;
+    z-index: 10;
+    cursor: pointer;
+}
+
+
+
+/*-------------------------------------------
+mainエリア
+-------------------------------------------*/
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+.card {
+    padding: 2em 0;
+}
+.secound-title {
+    text-align: center;
+    font-size: 2.25rem;
+    margin-bottom: 30px;
+}
+.sec-title {
+    text-align: center;
+    color: gray;
+    /* padding: 2em; */
+    letter-spacing: 0.2em;
+}
+.menu-border {
+    width: 100px;
+}
+.sec-sub-title {
+    text-align: center;
+}
+
+
+
+
+
+/*-------------------------------------------
+footerエリア
+-------------------------------------------*/
+#footer {
+    padding: 1em;
+    background-color: silver;
+    p {
+        margin: 0;
+        color: #fff;
+        font-size: 12px;
+        text-align: center;
+    }    
+}
+  
