@@ -17,7 +17,6 @@ li {
 ヘッダー
 -------------------------------------------*/
 header {
-  width: 100%;
   height: 64px;
   display: flex;
   justify-content: space-between;
@@ -123,18 +122,18 @@ header {
 /*-------------------------------------------
 mainエリア
 -------------------------------------------*/
+.head-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
 .wrapper {
-  max-width: 1000px;
   margin: 0 auto;
   padding: 0 32px; }
 
-.card {
-  padding: 2em 0; }
-
-.secound-title {
-  text-align: center;
-  font-size: 2.25rem;
-  margin-bottom: 30px; }
+.section-area {
+  margin: 2em 0;
+  background-color: pink; }
 
 .sec-title {
   text-align: center;
@@ -142,11 +141,30 @@ mainエリア
   /* padding: 2em; */
   letter-spacing: 0.2em; }
 
+.sec-sub-title {
+  text-align: center; }
+
 .menu-border {
   width: 100px; }
 
-.sec-sub-title {
-  text-align: center; }
+.sec-explan {
+  margin: 2em auto; }
+
+.menu-card {
+  justify-content: center;
+  display: flex; }
+
+.card {
+  max-width: 800px;
+  background-color: skyblue;
+  padding: 2em; }
+
+.about-area {
+  max-width: 800px; }
+
+.about-text {
+  width: 400px;
+  margin: 0 auto; }
 
 /*-------------------------------------------
 footerエリア
