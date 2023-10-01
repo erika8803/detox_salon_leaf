@@ -5,6 +5,7 @@
 body {
     line-height: 1.7;
     font-size: 0.9rem;
+    background-color: #EDE4DF;
 }
 a {
     text-decoration: none;
@@ -16,22 +17,20 @@ li {
 
   
 $mobile-size: 420px;
-$tablet-middle-size: 720px;
+$mobile-middle-size: 800px;
 $tablet-large-size: 960px;
 
-@mixin mobile {
+@mixin mobile-s {
     @media (max-width: $mobile-size) {
         @content;
     }
 }
-
-@mixin tablet-middle {
-    @media (max-width: $tablet-middle-size) {
+@mixin mobile {
+    @media (max-width: $mobile-middle-size) {
         @content;
     }
 }
-
-@mixin tablet-large {
+@mixin tablet {
     @media (max-width: $tablet-large-size) {
         @content;
     }
@@ -48,15 +47,16 @@ header {
     padding: 0 40px;
     z-index: 10; // 重なり順
     // position: fixed;
-    background-color: silver;
+    background-color: #fff;
 
     @include mobile {
         padding: 0 16px;
     }
 }
+
 .title-left {
-    padding-top: 1em;
-    font-size: 18px;
+    padding-top: 10px;
+    font-size: 2em;
 }
 
 /* humbergar menu */
@@ -189,7 +189,7 @@ mainエリア
     padding: 0 32px;
 }
 .section-area {
-    margin: 2em 0;
+    margin: 4em 2em;
     .section-title {
         text-align: center;
         color: gray;
@@ -200,7 +200,7 @@ mainエリア
         width: 160px;
     }
     .section-explan {
-        margin: 2em auto;
+        margin: 4em auto;
     }
     .section-text {
         text-align: center;
@@ -210,6 +210,10 @@ mainエリア
 .menu-card {
     justify-content: center;
     display: flex;
+
+    @include mobile {
+        display: block;
+    }
 }
 .card {
     min-width: 640px;
@@ -230,8 +234,12 @@ mainエリア
 .steps {
     width: 320px;
     height: 440px;
-    background-color: pink;
     margin: 2em;
+    border: 1px solid silver;
+
+    @include mobile {
+        margin: 2em auto;
+    }
 
     .steps-icon {
         width: 80px;
@@ -245,6 +253,8 @@ mainエリア
     .steps-text {
         padding: 2em 1em;
     }
+
+
 }
 
 
@@ -270,7 +280,7 @@ mainエリア
     padding: 3em 0 4em 0;
     .btn {
         border: 0px;
-        background-color: #435B8C;
+        background-color: #647789;
         width: 18em;
         height: 48px;
         border-radius: 160px;
@@ -289,7 +299,7 @@ footerエリア
 -------------------------------------------*/
 #footer {
     padding: 1em;
-    background-color: silver;
+    background-color: #647789;
     p {
         margin: 0;
         color: #fff;
