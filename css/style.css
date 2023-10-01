@@ -132,39 +132,73 @@ mainエリア
   padding: 0 32px; }
 
 .section-area {
-  margin: 2em 0;
-  background-color: pink; }
-
-.sec-title {
-  text-align: center;
-  color: gray;
-  /* padding: 2em; */
-  letter-spacing: 0.2em; }
-
-.sec-sub-title {
-  text-align: center; }
-
-.menu-border {
-  width: 100px; }
-
-.sec-explan {
-  margin: 2em auto; }
+  margin: 2em 0; }
+  .section-area .section-title {
+    text-align: center;
+    color: gray;
+    letter-spacing: 0.2em;
+    font-size: 2em; }
+  .section-area .menu-border {
+    width: 160px; }
+  .section-area .section-explan {
+    margin: 2em auto; }
+  .section-area .section-text {
+    text-align: center; }
 
 .menu-card {
   justify-content: center;
   display: flex; }
 
 .card {
-  max-width: 800px;
-  background-color: skyblue;
+  min-width: 640px;
   padding: 2em; }
-
-.about-area {
-  max-width: 800px; }
 
 .about-text {
   width: 400px;
   margin: 0 auto; }
+
+.about-img-area img {
+  width: 100%; }
+
+.steps {
+  width: 320px;
+  height: 440px;
+  background-color: pink;
+  margin: 2em; }
+  .steps .steps-icon {
+    width: 80px;
+    margin: 0 auto;
+    padding: 2em; }
+  .steps .steps-title {
+    text-align: center;
+    font-size: 18px; }
+  .steps .steps-text {
+    padding: 2em 1em; }
+
+.sns-icon {
+  text-align: center; }
+  .sns-icon .icon {
+    width: 64px;
+    height: 100%;
+    padding: 1em; }
+  .sns-icon .icon-line {
+    width: 75px;
+    margin: 0 auto;
+    padding: 1em; }
+
+.btn-area {
+  text-align: center;
+  padding: 3em 0 4em 0; }
+  .btn-area .btn {
+    border: 0px;
+    background-color: #435B8C;
+    width: 18em;
+    height: 48px;
+    border-radius: 160px; }
+    .btn-area .btn .btn-text {
+      color: #fff;
+      font-size: 16px;
+      text-align: center; }
 
 /*-------------------------------------------
 footerエリア
