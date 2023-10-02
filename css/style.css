@@ -158,29 +158,23 @@ mainエリア
     .menu-card {
       display: block; } }
 
-.card-left {
-  padding: 2em 2em 2em 0;
-  min-width: 640px; }
-  @media (max-width: 800px) {
-    .card-left {
-      padding: 2em 0; } }
-  .card-left img {
+.card-left, .card-right {
+  padding: 2em 1em;
+  width: 460px; }
+  .card-left img, .card-right img {
     width: 100%; }
 
-.card-right {
-  padding: 2em 0 2em 2em;
-  min-width: 640px; }
-  @media (max-width: 800px) {
-    .card-right {
-      padding: 2em 0; } }
-  .card-right img {
-    width: 100%; }
+@media (max-width: 800px) {
+  .card-left, .card-right {
+    margin: 0 auto; } }
 
 /*-------------------------------------------
 mainエリア About
 -------------------------------------------*/
 .about-area {
-  background-color: #EDE4DF;
+  background-image: url(../img/background.png);
+  background-attachment: fixed;
+  /* 背景画像を固定する */
   padding: 2em 0; }
   .about-area .about-text {
     width: 400px;
@@ -190,7 +184,6 @@ mainエリア About
 mainエリア Steps
 -------------------------------------------*/
 .steps-area {
-  background-image: url(img/about-img.png);
   padding: 2em 0; }
 
 .steps {
@@ -219,11 +212,11 @@ mainエリア Reservation
   .sns-icon .icon {
     width: 64px;
     height: 100%;
-    padding: 1em; }
+    padding: .5em; }
   .sns-icon .icon-line {
     width: 75px;
     margin: 0 auto;
-    padding: 1em; }
+    padding: .5em; }
 
 .btn-area {
   text-align: center;

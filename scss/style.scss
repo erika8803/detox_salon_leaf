@@ -20,7 +20,6 @@ a {
 li {
     list-style-type: none;
 }
-
   
 $mobile-size: 420px;
 $mobile-middle-size: 800px;
@@ -224,36 +223,27 @@ mainエリア
         display: block;
     }
 }
-.card-left {
-    padding: 2em 2em 2em 0;
-    min-width: 640px;
-
-    @include mobile {
-        padding: 2em 0;
-    }
-
+.card-left, .card-right {
+    padding: 2em 1em;
+    width: 460px;
     img {
         width: 100%;
     }    
 }
-.card-right {
-    padding: 2em 0 2em 2em;
-    min-width: 640px;
 
+.card-left, .card-right {
     @include mobile {
-        padding: 2em 0;
+        margin: 0 auto;
     }
-
-    img {
-        width: 100%;
-    }    
 }
 
 /*-------------------------------------------
 mainエリア About
 -------------------------------------------*/
 .about-area {
-    background-color: $main-color;
+    background-image: url(../img/background.png);
+    background-attachment: fixed; /* 背景画像を固定する */
+    // background-color: $main-color;
     padding: 2em 0;
     .about-text{
         width: 400px;
@@ -267,7 +257,7 @@ mainエリア Steps
 -------------------------------------------*/
 
 .steps-area {
-    background-image: url(img/about-img.png);
+    // background-image: url(img/about-img.png);
     // background-color: $main-color;
     padding: 2em 0;
 }
@@ -308,12 +298,12 @@ mainエリア Reservation
         height: 100%;
         
         // margin: 0 auto;
-        padding: 1em;
+        padding: .5em;
     }
     .icon-line {
         width: 75px;
         margin: 0 auto;
-        padding: 1em;
+        padding: .5em;
     }
 }
 
