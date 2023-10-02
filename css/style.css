@@ -4,7 +4,8 @@
 -------------------------------------------*/
 body {
   line-height: 1.7;
-  font-size: 0.9rem; }
+  font-size: 0.9rem;
+  background-color: #EDE4DF; }
 
 a {
   text-decoration: none;
@@ -22,14 +23,14 @@ header {
   justify-content: space-between;
   padding: 0 40px;
   z-index: 10;
-  background-color: silver; }
-  @media (max-width: 420px) {
+  background-color: #fff; }
+  @media (max-width: 800px) {
     header {
       padding: 0 16px; } }
 
 .title-left {
-  padding-top: 1em;
-  font-size: 18px; }
+  padding-top: 10px;
+  font-size: 2em; }
 
 /* humbergar menu */
 #nav {
@@ -67,7 +68,7 @@ header {
   cursor: pointer;
   transition: all 0.5s;
   z-index: 20; }
-  @media (max-width: 420px) {
+  @media (max-width: 800px) {
     .hamburger-btn {
       right: 20px; } }
   .hamburger-btn span {
@@ -132,7 +133,7 @@ mainエリア
   padding: 0 32px; }
 
 .section-area {
-  margin: 2em 0; }
+  margin: 4em 2em; }
   .section-area .section-title {
     text-align: center;
     color: gray;
@@ -141,13 +142,16 @@ mainエリア
   .section-area .menu-border {
     width: 160px; }
   .section-area .section-explan {
-    margin: 2em auto; }
+    margin: 4em auto; }
   .section-area .section-text {
     text-align: center; }
 
 .menu-card {
   justify-content: center;
   display: flex; }
+  @media (max-width: 800px) {
+    .menu-card {
+      display: block; } }
 
 .card {
   min-width: 640px;
@@ -163,8 +167,11 @@ mainエリア
 .steps {
   width: 320px;
   height: 440px;
-  background-color: pink;
-  margin: 2em; }
+  margin: 2em;
+  border: 1px solid silver; }
+  @media (max-width: 800px) {
+    .steps {
+      margin: 2em auto; } }
   .steps .steps-icon {
     width: 80px;
     margin: 0 auto;
@@ -191,7 +198,7 @@ mainエリア
   padding: 3em 0 4em 0; }
   .btn-area .btn {
     border: 0px;
-    background-color: #435B8C;
+    background-color: #647789;
     width: 18em;
     height: 48px;
     border-radius: 160px; }
@@ -205,7 +212,7 @@ footerエリア
 -------------------------------------------*/
 #footer {
   padding: 1em;
-  background-color: silver; }
+  background-color: #647789; }
   #footer p {
     margin: 0;
     color: #fff;
