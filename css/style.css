@@ -173,6 +173,12 @@ mainエリア
     margin: 0 auto;
     width: 400px; } }
 
+@media (max-width: 420px) {
+  .card-left, .card-right {
+    padding: 2em 0;
+    margin: 0 auto;
+    width: 320px; } }
+
 /*-------------------------------------------
 mainエリア About
 -------------------------------------------*/
