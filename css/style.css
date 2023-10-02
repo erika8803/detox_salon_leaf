@@ -5,7 +5,7 @@
 body {
   line-height: 1.7;
   font-size: 0.9rem;
-  background-color: #EDE4DF; }
+  font-family: '游ゴシック',YuGothic,'ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic ProN','メイリオ',Meiryo,sans-serif; }
 
 a {
   text-decoration: none;
@@ -18,12 +18,14 @@ li {
 ヘッダー
 -------------------------------------------*/
 header {
+  width: 100%;
   height: 64px;
   display: flex;
+  position: fixed;
   justify-content: space-between;
   padding: 0 40px;
   z-index: 10;
-  background-color: #fff; }
+  background-color: #EDE4DF; }
   @media (max-width: 800px) {
     header {
       padding: 0 16px; } }
@@ -34,7 +36,7 @@ header {
 
 /* humbergar menu */
 #nav {
-  background-color: #121212;
+  background-color: #EDE4DF;
   position: fixed;
   width: 30%;
   top: 0;
@@ -43,7 +45,7 @@ header {
   padding: 60px 25px;
   z-index: 20; }
   #nav a {
-    color: #fff; }
+    color: #647789; }
   #nav ul {
     padding: 0; }
 
@@ -123,10 +125,13 @@ header {
 /*-------------------------------------------
 mainエリア
 -------------------------------------------*/
-.head-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; }
+.head-img {
+  padding-top: 64px; }
+  .head-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0; }
 
 .wrapper {
   margin: 0 auto;
@@ -153,16 +158,40 @@ mainエリア
     .menu-card {
       display: block; } }
 
-.card {
-  min-width: 640px;
-  padding: 2em; }
+.card-left {
+  padding: 2em 2em 2em 0;
+  min-width: 640px; }
+  @media (max-width: 800px) {
+    .card-left {
+      padding: 2em 0; } }
+  .card-left img {
+    width: 100%; }
 
-.about-text {
-  width: 400px;
-  margin: 0 auto; }
+.card-right {
+  padding: 2em 0 2em 2em;
+  min-width: 640px; }
+  @media (max-width: 800px) {
+    .card-right {
+      padding: 2em 0; } }
+  .card-right img {
+    width: 100%; }
 
-.about-img-area img {
-  width: 100%; }
+/*-------------------------------------------
+mainエリア About
+-------------------------------------------*/
+.about-area {
+  background-color: #EDE4DF;
+  padding: 2em 0; }
+  .about-area .about-text {
+    width: 400px;
+    margin: 0 auto; }
+
+/*-------------------------------------------
+mainエリア Steps
+-------------------------------------------*/
+.steps-area {
+  background-image: url(img/about-img.png);
+  padding: 2em 0; }
 
 .steps {
   width: 320px;
@@ -182,6 +211,9 @@ mainエリア
   .steps .steps-text {
     padding: 2em 1em; }
 
+/*-------------------------------------------
+mainエリア Reservation
+-------------------------------------------*/
 .sns-icon {
   text-align: center; }
   .sns-icon .icon {

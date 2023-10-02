@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/reset.css" />
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css"/>
   </head>
@@ -51,47 +52,77 @@
                 <img src="img/header.png" alt="トップ画像">
             </div>
         </head>
-        <div class="wrapper">
+        <div>
             <!-- About -->
-            <section>
+            <section class="wrapper about-area">
                 <div class="section-area">
                     <div>
                         <h2 class="section-title">About</h2>
                         <hr class="menu-border">
                         <div class="section-explan">
-                            <p class="section-text">セクションテキストセクションテキストセクションテキストセクションテキストセクションテキスト</p>
+                            <p class="section-text">
+                                溜め込んだ毒素を出して美肌へのアドバイス<br>
+                                ・栄養士／17年勤務<br>
+                                ・エステティック・セラピストスキル取得科卒業<br>
+                                ・日本ノーファンデーション協会<br>
+                                ・認定フェイシャル・ボディーエステティシャン<br>
+                                ・Revi認定サロン<br>
+                            </p>
                         </div>
                     </div>
                     <div class="menu-card abput-area">
-                        <div class="about-img-area card"><img src="img/about-img.png" alt="about-img"></div>
-                        <div class="about-text-area card">
+                        <div class="card-left"><img src="img/about-img.png" alt="about-img"></div>
+                        <div class="card-right">
                             <div>テキストテキストテキストテキスト</div>
                         </div>
                     </div>
                     <div class="menu-card">
-                        <div class="card">テキストテキストテキストテキスト</div>
-                        <div class="card"><img src="img/about-img.png" alt="about-img"></div>
+                        <div class="card-left">テキストテキストテキストテキスト</div>
+                        <div class="card-right"><img src="img/about-img.png" alt="about-img"></div>
                     </div>
                 </div>
             </section>
             <!-- Course -->
-            <section>
+            <section class="wrapper">
                 <div class="section-area">
                     <div>
                         <h2 class="section-title">Course</h2>
                         <hr class="menu-border">
                         <div class="section-explan">
-                            <p class="section-text">セクションテキストセクションテキストセクションテキストセクションテキストセクションテキスト</p>
+                            <p class="section-text"></p>
                         </div>
                     </div>
                     <div class="menu-card abput-area">
-                        <div class="about-img-area card"><img src="img/about-img.png" alt="about-img"></div>
-                        <div class="about-img-area card"><img src="img/about-img.png" alt="about-img"></div>
+                        <div class="card-left"><img src="img/menu.png" alt="about-img"></div>
+                        <div class="card-right">
+                            <table>
+                                <tr><th>Reviメニュー</th><th>金額</th></tr>
+                                <tr><td>お肌の汚れ落としコース</td><td>￥5,500-</td></tr>
+                                <tr><td>陶肌トリートメント</td><td>￥11,00-</td></tr>
+                                <tr><td>ニキビ毛穴レスコース</td><td>￥15,400-</td></tr>
+                                <tr><td>ハリ・ツヤ肌コース</td><td>￥13,750-</td></tr>
+                                <tr><td>美肌コース</td><td>￥18,150-</td></tr>                                    
+                                <tr><td>背中ニキビ改善コース</td><td>￥22,000〜</td></tr>
+                            </table>
+                            <table>
+                                <tr><th>モリンガメニュー</th><th>金額</th></tr>
+                                <tr><td>モリンガ蒸しコース</td><td>￥5,500-</td></tr>
+                                <tr><td>トリートメント</td><td>￥8,000-</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="menu-card abput-area">
+                        <div class="card-left">
+                            <div>
+
+                            </div>
+                        </div>
+                        <div class="card-right"><img src="img/about-img.png" alt="about-img"></div>
                     </div>
                 </div>
             </section>
             <!-- Steps -->
-            <section>
+            <section class="wrapper steps-area">
                 <div class="section-area">
                     <div>
                         <h2 class="section-title">Steps</h2>
@@ -136,7 +167,7 @@
                 </div>
             </section>
             <!-- Reservation -->
-            <section>
+            <section class="wrapper">
                 <div class="section-area">
                     <div>
                         <h2 class="section-title">Reservation</h2>
@@ -146,7 +177,7 @@
                         </div>
                     </div>
                     <div class="menu-card">
-                        <div class="card">
+                        <div class="card-left">
                             <div>
                                 <p class="section-title">ご予約について</p>
                                 <div class="section-explan">
@@ -169,7 +200,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card"><img src="img/about-img.png" alt="about-img"></div>
+                        <div class="card-right"><img src="img/about-img.png" alt="about-img"></div>
                     </div>
                 </div>
             </section>
