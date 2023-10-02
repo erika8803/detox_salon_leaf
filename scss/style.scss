@@ -195,6 +195,9 @@ mainエリア
 .wrapper {
     margin: 0 auto;
     padding: 0 32px;
+    @include mobile {
+        padding: 0;
+    }
 }
 .section-area {
     margin: 4em 2em;
@@ -233,7 +236,9 @@ mainエリア
 
 .card-left, .card-right {
     @include mobile {
+        padding: 2em 0;
         margin: 0 auto;
+        width: 400px;
     }
 }
 
@@ -299,11 +304,18 @@ mainエリア Reservation
         
         // margin: 0 auto;
         padding: .5em;
+        @include mobile {
+            padding: 0;
+        }
     }
     .icon-line {
         width: 75px;
         margin: 0 auto;
         padding: .5em;
+
+        @include mobile {
+            padding: 0;
+        }
     }
 }
 

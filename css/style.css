@@ -136,6 +136,9 @@ mainエリア
 .wrapper {
   margin: 0 auto;
   padding: 0 32px; }
+  @media (max-width: 800px) {
+    .wrapper {
+      padding: 0; } }
 
 .section-area {
   margin: 4em 2em; }
@@ -166,7 +169,9 @@ mainエリア
 
 @media (max-width: 800px) {
   .card-left, .card-right {
-    margin: 0 auto; } }
+    padding: 2em 0;
+    margin: 0 auto;
+    width: 400px; } }
 
 /*-------------------------------------------
 mainエリア About
@@ -213,10 +218,16 @@ mainエリア Reservation
     width: 64px;
     height: 100%;
     padding: .5em; }
+    @media (max-width: 800px) {
+      .sns-icon .icon {
+        padding: 0; } }
   .sns-icon .icon-line {
     width: 75px;
     margin: 0 auto;
     padding: .5em; }
+    @media (max-width: 800px) {
+      .sns-icon .icon-line {
+        padding: 0; } }
 
 .btn-area {
   text-align: center;
