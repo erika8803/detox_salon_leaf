@@ -24,7 +24,7 @@ header {
   position: fixed;
   justify-content: space-between;
   padding: 0 40px;
-  z-index: 10;
+  z-index: 20;
   background-color: #EDE4DF; }
   @media (max-width: 800px) {
     header {
@@ -126,29 +126,38 @@ header {
 mainエリア
 -------------------------------------------*/
 .head-img {
-  padding-top: 64px; }
+  padding: 64px 0 0 0;
+  background-color: #EDE4DF; }
   .head-img img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    margin: 0; }
+    object-fit: cover; }
 
 .wrapper {
   margin: 0 auto;
   padding: 0 32px; }
   @media (max-width: 800px) {
     .wrapper {
-      padding: 0; } }
+      padding: 2em 0; } }
 
 .section-area {
   margin: 4em 2em; }
+  @media (max-width: 420px) {
+    .section-area {
+      margin: 0 2em; } }
   .section-area .section-title {
     text-align: center;
     color: gray;
     letter-spacing: 0.2em;
     font-size: 2em; }
+    @media (max-width: 420px) {
+      .section-area .section-title {
+        font-size: 18px; } }
   .section-area .menu-border {
     width: 160px; }
+    @media (max-width: 420px) {
+      .section-area .menu-border {
+        width: 80px; } }
   .section-area .section-explan {
     margin: 4em auto; }
   .section-area .section-text {
@@ -183,9 +192,9 @@ mainエリア
 mainエリア About
 -------------------------------------------*/
 .about-area {
-  background-image: url(../img/background.png);
   background-attachment: fixed;
   /* 背景画像を固定する */
+  background-color: #EDE4DF;
   padding: 2em 0; }
   .about-area .about-text {
     width: 400px;
@@ -227,6 +236,10 @@ mainエリア Reservation
     @media (max-width: 800px) {
       .sns-icon .icon {
         padding: 0; } }
+    @media (max-width: 420px) {
+      .sns-icon .icon {
+        width: 50px;
+        padding: 4px; } }
   .sns-icon .icon-line {
     width: 75px;
     margin: 0 auto;
@@ -234,6 +247,10 @@ mainエリア Reservation
     @media (max-width: 800px) {
       .sns-icon .icon-line {
         padding: 0; } }
+    @media (max-width: 420px) {
+      .sns-icon .icon-line {
+        width: 61px;
+        padding: 1px; } }
 
 .btn-area {
   text-align: center;
@@ -242,8 +259,7 @@ mainエリア Reservation
     border: 0px;
     background-color: #647789;
     width: 18em;
-    height: 48px;
-    border-radius: 160px; }
+    height: 48px; }
     .btn-area .btn .btn-text {
       color: #fff;
       font-size: 16px;

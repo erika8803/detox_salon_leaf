@@ -10,7 +10,6 @@ $point-color: #647789;
 body {
     line-height: 1.7;
     font-size: 0.9rem;
-    // background-color: #EDE4DF;
     font-family:  '游ゴシック',YuGothic,'ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic ProN','メイリオ',Meiryo,sans-serif;
 }
 a {
@@ -51,10 +50,10 @@ header {
     position: fixed;
     justify-content: space-between; // navを中央に位置付けする
     padding: 0 40px;
-    z-index: 10; // 重なり順
+    z-index: 20; // 重なり順
     // position: fixed;
     background-color: $main-color;
-
+    
     @include mobile {
         padding: 0 16px;
     }
@@ -182,12 +181,12 @@ mainエリア
 -------------------------------------------*/
 // head
 .head-img {
-    padding-top: 64px;
+    padding: 64px 0 0 0;
+    background-color: $main-color;
     img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        margin: 0;
     }
 }
 
@@ -196,19 +195,31 @@ mainエリア
     margin: 0 auto;
     padding: 0 32px;
     @include mobile {
-        padding: 0;
+        padding: 2em 0;
     }
 }
 .section-area {
     margin: 4em 2em;
+    @include mobile-s {
+        margin: 0 2em;
+    }
+
     .section-title {
         text-align: center;
         color: gray;
         letter-spacing: 0.2em;
         font-size: 2em;
+
+        @include mobile-s {
+            font-size: 18px;
+        }
     }
     .menu-border {
         width: 160px;
+
+        @include mobile-s {
+            width: 80px;
+        }
     }
     .section-explan {
         margin: 4em auto;
@@ -251,9 +262,8 @@ mainエリア
 mainエリア About
 -------------------------------------------*/
 .about-area {
-    background-image: url(../img/background.png);
     background-attachment: fixed; /* 背景画像を固定する */
-    // background-color: $main-color;
+    background-color: $main-color;
     padding: 2em 0;
     .about-text{
         width: 400px;
@@ -306,11 +316,13 @@ mainエリア Reservation
     .icon {
         width: 64px;
         height: 100%;
-        
-        // margin: 0 auto;
         padding: .5em;
         @include mobile {
             padding: 0;
+        }
+        @include mobile-s {
+            width: 50px;
+            padding: 4px;
         }
     }
     .icon-line {
@@ -320,6 +332,10 @@ mainエリア Reservation
 
         @include mobile {
             padding: 0;
+        }
+        @include mobile-s {
+            width: 61px;
+            padding: 1px;
         }
     }
 }
@@ -332,7 +348,7 @@ mainエリア Reservation
         background-color: $point-color;
         width: 18em;
         height: 48px;
-        border-radius: 160px;
+        // border-radius: 100px;
         .btn-text {
         color: #fff;
         font-size: 16px;
