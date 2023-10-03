@@ -5,7 +5,7 @@
 body {
   line-height: 1.7;
   font-size: 0.9rem;
-  font-family: '游ゴシック',YuGothic,'ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic ProN','メイリオ',Meiryo,sans-serif; }
+  font-family: 'ヒラギノ明朝, 游ゴシック',YuGothic,'ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic ProN','メイリオ',Meiryo,sans-serif; }
 
 a {
   text-decoration: none;
@@ -159,7 +159,9 @@ mainエリア
       .section-area .menu-border {
         width: 80px; } }
   .section-area .section-explan {
-    margin: 4em auto; }
+    margin: .5em auto;
+    font-size: 24px;
+    text-align: center; }
   .section-area .section-text {
     text-align: center; }
 
@@ -204,6 +206,7 @@ mainエリア About
 mainエリア Steps
 -------------------------------------------*/
 .steps-area {
+  background-color: #EDE4DF;
   padding: 2em 0; }
 
 .steps {
