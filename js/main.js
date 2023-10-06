@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const hamburgerBtn = document.querySelector('.hamburger-btn');
     const header = document.querySelector('#header');
     const hamburgerBtnArea = document.querySelector('#hamburger-btn-area');
-    const links = document.querySelectorAll('a');
+    const links = document.querySelectorAll('.nav-link');
 
     // メニュークリック時の処理
     hamburgerBtn.addEventListener('click', () => {
