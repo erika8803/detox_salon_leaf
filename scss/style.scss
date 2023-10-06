@@ -19,6 +19,9 @@ a {
 li {
     list-style-type: none;
 }
+.margin-bottom {
+    margin-bottom: 2em; 
+}
   
 $mobile-size: 420px;
 $mobile-middle-size: 800px;
@@ -272,6 +275,37 @@ mainエリア About
         margin: 0 auto;
     }    
 }
+
+
+/*-------------------------------------------
+mainエリア Course
+-------------------------------------------*/
+.course-menu {
+    padding: 0 0 2em 2em;
+    text-align: left;
+    @include mobile {
+        padding: 0;
+    }
+    th {
+        font-size: 24px;
+        padding: 0 0 .5em .5em;
+    }
+    .menu {
+        width: 400px;
+        height: 32px;
+        @include mobile {
+            width: 240px;
+        } 
+    }
+    .amount {
+        width: 200px;
+        height: 32px;
+        @include mobile {
+            width: 80px;
+        } 
+    }
+}
+
 
 
 /*-------------------------------------------
